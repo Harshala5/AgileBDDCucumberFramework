@@ -3,7 +3,10 @@ package hr_admin;
 
 import org.openqa.selenium.By;
 
+import java.util.Random;
+
 public class EmployeeListPage extends BasePage {
+    Random random = new Random();
     public void pimModule(){
         driver.findElement(By.id("menu_pim_viewPimModule")).click();
     }
@@ -33,7 +36,7 @@ public class EmployeeListPage extends BasePage {
     }
 
     public void enterEmpUserName(String empUserName) {
-        driver.findElement(By.id("user_name")).sendKeys(empUserName);
+        driver.findElement(By.id("user_name")).sendKeys(empUserName+random.nextInt());
     }
 
     public void enterEmpPassword(String empPassword){

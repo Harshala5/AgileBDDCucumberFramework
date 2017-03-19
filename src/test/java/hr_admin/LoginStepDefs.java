@@ -25,8 +25,8 @@ public class LoginStepDefs {
 
     @When("^Admin enters username as \"([^\"]*)\" and password as \"([^\"]*)\"$")
     public void enterAdminCredentials(String username, String password) {
-        loginPage.enterUserName("Admin");
-        loginPage.enterPassword("aediMNjU");
+        loginPage.enterUserName(username);
+        loginPage.enterPassword(password);
     }
 
     @And("^Admin clicks on login button$")
