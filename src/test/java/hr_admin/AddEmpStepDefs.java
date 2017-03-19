@@ -55,7 +55,7 @@ public class AddEmpStepDefs {
 
     @And("^Admin enters data in 'User Name', 'Password', 'Confirm Password' fields$")
     public void empUserCredentials(String userName, String password, String confPassword) {
-        employeePage.enterEmpUserName("testing1");
+        employeePage.enterEmpUserName("TestUsername");
         employeePage.enterEmpPassword("123456");
         employeePage.reenterEmpPassword("123456");
     }
